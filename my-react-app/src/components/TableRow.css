@@ -1,0 +1,39 @@
+.table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.2fr 1.2fr 0.3fr;
+  align-items: center;
+  border: 2px solid #8AFF57;
+  border-radius: 4px;
+  background: #18181b;
+  color: #8AFF57;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2rem;
+  margin: 8px 0;
+  position: relative;
+  gap: 8px;
+}
+
+.table-row__cell {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.table-row__badge {
+  background: #8AFF57;
+  color: #18181b;
+  padding: 2px 12px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: 'Fira Mono', monospace;
+  display: inline-block;
+}
+
+.table-row__arrow {
+  justify-content: flex-end;
+  font-size: 2rem;
+  color: #8AFF57;
+  font-weight: 700;
+  padding-left: 8px;
+}

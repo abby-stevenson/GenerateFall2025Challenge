@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./TableRow.css";
 
 type TableRowProps = {
   firstName: string;
@@ -7,14 +9,28 @@ type TableRowProps = {
   type: string;
 };
 
-const TableRow: React.FC<TableRowProps> = ({ firstName, lastName, id, type }) => (
-  <div className="flex items-center border-2 border-lime-400 rounded px-3 py-2 bg-zinc-800 text-lime-400 font-mono text-2xl my-4 relative">
-    <span className="flex-1 mr-4">{firstName}</span>
-    <span className="flex-1 mr-4">{lastName}</span>
-    <span className="bg-lime-400 text-zinc-900 px-3 py-1 rounded mr-4 text-xl">{`#${id}`}</span>
-    <span className="bg-lime-400 text-zinc-900 px-3 py-1 rounded mr-4 text-xl">{type}</span>
-    <span className="ml-auto text-lime-400 text-2xl font-bold pl-2">&#8250;</span>
-  </div>
-);
+const TableRow: React.FC<TableRowProps> = ({ firstName, lastName, id, type }) => {
+  const navigate = useNavigate();
+  return (
+    <div className="table-row">
+      <span className="table-row__cell">{firstName}</span>
+      <span className="table-row__cell">{lastName}</span>
+      <span className="table-row__cell">
+        <span className="table-row__badge">{`#${id}`}</span>
+      </span>
+      <span className="table-row__cell">
+        <span className="table-row__badge">{type}</span>
+      </span>
+      <span
+        className="table-row__cell table-row__arrow"
+        style={{ cursor: "pointer" }}
+        onClick={() => navigate(`/alien/${id}`)}
+        title="View Profile"
+      >
+        &#8250;
+      </span>
+    </div>
+  );
+};
 
 export default TableRow;

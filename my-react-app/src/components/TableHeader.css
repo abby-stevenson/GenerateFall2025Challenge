@@ -1,0 +1,18 @@
+.header-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.2fr 1.2fr 0.3fr;
+  align-items: center;
+  background: #8AFF57;
+  color: #18181b;
+  font-family: 'Fira Mono', monospace;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  padding: 0;
+  gap: 8px;
+}
+
+.header-row__cell {
+  padding: 8px 16px;
+  font-weight: 500;
+}
