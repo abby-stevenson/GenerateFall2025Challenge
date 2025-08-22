@@ -1,0 +1,47 @@
+.alien-profile-stat-row {
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 32px;
+}
+
+.alien-profile-stat-header-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #8AFF57;
+  color: #18181b;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0;
+  border: none;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.alien-profile-stat-label {
+  font-weight: bold;
+}
+
+.alien-profile-stat-desc {
+  color: #18181b;
+  opacity: 1;
+  font-size: 1.1rem;
+  margin-left: 16px;
+}
+
+.alien-profile-stat-value {
+  color: #8AFF57;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.1rem;
+  margin: 16px 0 8px 24px;
+}
+
+.alien-profile-stat-bar-row {
+  margin: 0 24px;
+}
