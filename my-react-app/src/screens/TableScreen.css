@@ -51,3 +51,14 @@
   bottom: 16px;
   opacity: 0.7;
 }
+
+.alien-table-header {
+  border: 2px solid #8AFF57;
+  border-radius: 0;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}

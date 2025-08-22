@@ -117,14 +117,12 @@
   align-items: center;
 }
 
-/* Stat section: relative for absolute header bars */
 .alien-profile-stat-row {
   position: relative;
   margin-bottom: 40px;
-  padding-top: 32px; /* space for the absolute header bar */
+  padding-top: 32px; 
 }
 
-/* The neon green header bar */
 .alien-profile-stat-header-bar {
   position: absolute;
   top: 0;
@@ -160,7 +158,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding-top: 24px; /* push content below the header bar */
+  padding-top: 24px; 
 }
 
 .alien-profile-stat-value {
@@ -187,7 +185,6 @@
   border-radius: 999px;
   border: 1.5px solid #8AFF57;
   margin: 2px 0;
-  transition: background 0.3s;
 }
 
 .alien-profile-stat-bar-segment.filled {
@@ -199,42 +196,35 @@
   margin: 0 24px;
 }
 
-/* Stat bar container */
 .stat-bar.stat-bar--levels {
   display: flex;
   flex: 1;
   height: 48px;
   border: 2px solid #8AFF57;
-  border-radius: 32px; /* fully rounded ends for the container */
+  border-radius: 32px;
   overflow: hidden;
   background: transparent;
   margin: 0 0 0 0;
 }
 
-/* Each segment */
 .stat-bar-level {
   flex: 1;
   border: none;
   background: transparent;
-  transition: background 0.3s;
   margin: 0;
-  /* Remove all border-radius by default */
   border-radius: 0;
 }
 
-/* Only the first segment gets left rounding */
 .stat-bar-level:first-child {
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
 
-/* Only the last segment gets right rounding */
 .stat-bar-level:last-child {
   border-top-right-radius: 32px;
   border-bottom-right-radius: 32px;
 }
 
-/* Filled segments */
 .stat-bar-level.filled {
   background: #8AFF57;
 }

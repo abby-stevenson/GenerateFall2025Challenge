@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import alienLogo from "../assets/alien-logo.png";
 import "./ProfileScreen.css";
 import StatBar from "../components/StatBar";
+import AlienStatBar from "../components/AlienStatBar";
 
 const PARTICIPANT_ID = "d5b54d25-7ad6-409e-9ef7-a6079e679ff5";
 
@@ -66,25 +67,5 @@ const AlienProfileScreen: React.FC = () => {
     </div>
   );
 };
-
-type AlienStatBarProps = {
-  label: string;
-  value: number;
-  max: number;
-  description: string;
-};
-
-const AlienStatBar: React.FC<AlienStatBarProps> = ({ label, value, max, description }) => (
-  <div className="alien-profile-stat-row">
-    <div className="alien-profile-stat-header-bar">
-      <span className="alien-profile-stat-label">{label}</span>
-      <span className="alien-profile-stat-desc">{description}</span>
-    </div>
-    <div className="alien-profile-stat-value">{label} = {value}</div>
-    <div className="alien-profile-stat-bar-row">
-      <StatBar fillPercent={(value / max) * 100} levels={3} />
-    </div>
-  </div>
-);
 
 export default AlienProfileScreen;

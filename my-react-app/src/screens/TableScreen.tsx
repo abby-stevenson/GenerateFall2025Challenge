@@ -7,7 +7,9 @@ import "./TableScreen.css";
 const TableScreen: React.FC = () => (
   <div className="alien-data-bg">
     <div className="alien-data-frame">
-      <AlienDataHeader />
+      <div className="alien-table-header">
+        <AlienDataHeader />
+      </div>
       <AlienTable />
       <AlienDataFooter />
     </div>
